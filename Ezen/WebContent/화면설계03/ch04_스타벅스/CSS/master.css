@@ -1,0 +1,236 @@
+/* master.css */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+/**** COMMON ****/
+*{ margin: 0; padding: 0;}
+html, body{
+	font: 16px 'NanumSquare', sans-serif !important;
+	color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.0em;
+	font-weight: normal;
+}
+img{
+	display: block;
+	border: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+/**** LAYOUT ****/
+body{ width: 100%;}
+#wrap { width: 100%;}
+
+	#wrap > section{
+		width: 100%;
+		}
+	#main_bean{
+		height: 573px;
+		background: url(../img/19_christmas1_coffee_bg_1.jpg) center;
+	}
+	#reserve{
+		height: 400px;
+		background: url(../img/19_christmas_main_res_bean.png) no-repeat right center #0f0f0f;
+	}
+	#favorite{
+		height:862px;
+		background: url(../img/fav_prod_bg_new.jpg) center fixed;
+		background-size: cover;
+	}
+	#store{
+		height: 590px;
+		background: url(../img/reserve_bg.jpg) center fixed;
+		background-size: cover;
+		padding-top: 132px;
+		box-sizing: border-box;
+	}
+	#store_search{
+		height: 400px;
+		background: url(../img/store_exp_img03.png) no-repeat 50% -58px , url(../img/store_bg.jpg) center;
+		}
+
+		#wrap > section > div{
+			width: 1232px;
+			margin-left: auto;
+			margin-right: auto;
+
+			overflow: hidden;
+		}
+
+		/**** 1 ****/
+		#main_bean .main_image{
+			margin-top: 73px;
+			float: left;
+			width: 511px;
+		}
+
+		#main_bean .text{
+			margin-top: 177px;
+			float: right;
+			width: 556px;
+		}
+		#main_bean .text_detail{
+		}
+			#main_bean .text_detail > h2{
+				width:556px; height:63px;
+				background: url(../img/19_christmas1_bean_ttl.png);
+				margin-bottom: 25px;
+			}
+			#main_bean .text_detail > p{
+				width:568px; height:125px;
+				background: url(../img/19_christmas1_bean_txt.png);
+				margin-bottom: 19px;
+			}
+
+			/****더보기 클래스 ****/
+			a.more{
+				width: 125px;
+				height: 38px;
+				box-sizing: border-box; /*padding border 값이 width, height에 포함되도록 해주는 속성 */
+				border: 2px solid #000;
+				border-radius: 3px;
+				text-align: center;
+				line-height: 34px; /*줄간격*/
+				font-size: 14px;
+			}
+
+/**** 2 ****/
+#reserve .main_image{
+	float: left;
+	width: 95px; 
+	margin-right: 65px;
+	margin-top: 143px;
+}
+#reserve .text{
+	float: left;
+	width: 380px;
+	margin-top: 92px;
+}
+	#reserve .text_detail{
+		width: 380px;
+		height: 171px;
+		background: url(../img/19_christmas_reserve_txt1.png);
+		margin-bottom: 30px;
+	}
+	#reserve .more{
+		border-color: #fff;
+		color: #fff;
+	}
+/**** 3 ****/
+#favorite .main_image{
+	width: 712px;
+	float: right;
+	margin-top: 98px;
+}
+		#favorite .main_image > img{
+			width: 100%;
+		}
+#favorite .text{
+	width: 400px;
+	float: left;
+	margin-top: 118px;
+}
+		#favorite .text_detail{
+			overflow: hidden;
+			width: 400px;
+		}
+		#favorite .text_detail > h2{
+			float: right;
+			width: 258px;
+			height: 204px;
+			background: url(../img/fav_prod_txt01.png);
+			margin-bottom: 46px;
+		}
+		#favorite .text_detail > P{
+			float: right;
+			width: 362px;
+			height: 156px;
+			background: url(../img/fav_prod_txt02.png);
+			margin-bottom: 44px;
+			margin-rIght: 4px;
+		}
+		#favorite .more{
+			float: right;
+			border-color: #fff;
+			color: #fff;
+		}
+
+/**** 4 ****/
+	#wrap > #store > #store_logo{
+		width: 334px;
+		height: 334px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative; /*기준*/
+}
+	#store_logo > .front,
+	#store_logo > .back{
+		height: 334px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transition-duration: 0.2s;
+		backface-visibility: hidden;
+	}
+	#store_logo > .front{
+		transform: rotateY(0deg);
+	}
+	#store_logo:hover > .front{
+		transform: rotateY(180deg);
+	}
+	#store_logo > .back{
+		transform: rotateY(180deg);
+	}
+	#store_logo:hover > .back{
+		transform: rotateY(360deg);
+	}
+	#store_logo > .back > .more{
+		position: absolute;
+		left: 103px;
+		top: 247px;
+	}
+/**** 5 ****/
+	#store_search > div{
+	height: 400px;
+		background: url(../img/store_exp_img02.png) no-repeat, url(../img/store_exp_img04.png) no-repeat;
+		background-position: 103px 0, 963px 298px;
+	}
+	#store_search .main_image{
+		float: left;
+		width: 228px;
+		margin-left: 332px;
+		margin-top: 142px;
+	}
+	#store_search .text{
+		float: right;
+		width: 385px;
+		margin-top: 100px;
+		margin-right: 159px;
+	}
+	#store_search .text_detail{
+		
+	}
+	#store_search .text_detail > h2{
+		width: 385px;
+		height: 54px;
+		background: url(../img/store_txt01.png);
+		margin-bootm: 14px;
+	}
+	#store_search .text_detail > p{
+		width: 366px;
+		height: 61px;
+		background: url(../img/store_txt02.png);
+		margin-bottom: 29px;
+	}
+	#store_search .more{
+		margin-left: 7px;
+	}
+
+/**** CLASS STYLE ****/
+.text_detail > h2, .text_detail > p{
+	text-indent: -6000px; /*영역내의 글자를 왼쪽으로 이동 */
+	overflow: hidden; /*영역밖을 벗어난 글자 숨김 */s
+}

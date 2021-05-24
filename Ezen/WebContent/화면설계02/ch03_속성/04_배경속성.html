@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>배경속성</title>
+<style>
+
+*{ margin: 0; padding: 0;}
+
+.box1, .box2, .box3{
+	width: 600px;
+	height: 500px;
+	border: 2px solid red;
+	margin: 10px;
+}
+
+.box1{
+	background-color: #ccc;
+	background-image: url(imeges/img5.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 300px 300px;
+	background-attachment: ;
+
+}
+.box2{
+	/*background: url(imeges/img6.jpg) no-repeat 0 50% / 300px 300px fixed #ccc;*/
+	background: url(imeges/img6.jpg) no-repeat fixed #ccc;
+	background-position: 0% 50%;
+	background-size: 300px 300px;
+}
+
+.box3{
+	background: url(imeges/bg_text.png) no-repeat, 
+					url(imeges/bg_pattern.png) repeat #999;
+	background-position: center, left top;
+	background-size: auto, 20px, auto;
+}
+
+</style>
+</head>
+<body>
+
+<h1>배경속성</h1>
+배경속성을 ,로 구분해서 1개 이상의 배경을 동시에 표현할 수 있다.
+
+<h2>배경속성의 종류</h2>
+background-color		배경색 색상단위는 모두 적용됨
+background-image		url(상대경로/이미지명.확장자)
+background-reprat		연속성 repeat(연속) no-repeat(비연속) repeat-x(가로방향연속) repeat-y(세로방향연속) 
+background-position	이미지 위치 x축 y축 순으로 입력(left center right | top center bottom 크기단위입력)
+background-size		이미지크기 weigh(폭) height(높이) 크기단위로 입력 autq contain cover
+background-attachment	고정값(모바일환경에서는 지원 안됨) scroll(스크롤)fixed(고정)
+
+<h2>배경속성 적용</h2>
+<div class="box1">
+	배경속성 적용
+</div>
+
+<div class="box2">
+	배경속성 한번에적용
+</div>
+
+
+<div class="box3">
+	배경이미지 2개적용
+</div>
+
+
+
+</body>
+</html>

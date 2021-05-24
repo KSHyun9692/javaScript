@@ -1,0 +1,109 @@
+/* bbs_style.css */
+@import url(common.css);
+
+#board_wrap{
+	width: 690px;
+	margin: 50px;
+}
+
+/** 검색 **/
+#search_form{ 
+	width: 100%;
+	margin-bottom :10px;
+}
+#search_form > form{ 
+	width: 100%;
+	overflow: hidden;
+}
+#search_form fieldset{ 
+	float: right;
+	margin-top: 31px;
+	margin-right: 10px;
+}
+
+	#search_form label{
+		float: left;
+		margin-top: 7px;
+	}
+	input#search_txt{
+		float: left;
+		width: 133px
+		height: 19px;
+		box-sizing: border-box;
+		border: 1px solid #d1d1d1;
+		background-color: #fff;
+		margin: 0 4px;
+	}
+	input#search_btn{
+		float: left;
+	}
+
+/** 게시판 **/
+#board{ width: 100%;}
+
+#board > .head{
+	width: 100%;
+	height: 37px;
+	background:url(../images/bar_dark_bg.gif) repeat-x;
+	line-height: 37px;
+	color: #61b96f;
+	font-weight: 800;
+}
+#board > .main{ width: 100%;}
+#board > .number{
+	width: 100%;
+	height: 32px;
+	background: url(../images/bbsBottomBg.gif) repeat-x;
+}
+
+	#board > div > ul{}
+	#board > div.head > ul{
+		height: 34px;
+		border-left: 3px solid #5db062;
+	}
+		#board > div > ul > li{
+			overflow: hidden;
+		}
+		#board > div.main > ul > li{
+			height: 28px;
+			border-bottom: 1px solid #e6e6e6;
+			line-height: 28px;
+			color: #666;
+		}
+		#board > div.main > ul > li a{
+			color: #666;
+		}
+			#board > div > ul > li > span{
+				float: left;
+				display: block;
+				text-align: center;
+			}
+				#board > div > ul > li > span.tilte{
+					text-align: left;
+				}
+				.no{ width: 56px;}
+				.title{ width: 412px;}
+				.date{
+					width: 107px;
+					color: #61b96f;
+				}
+				.writer{ width: 40px;}
+				.hit{
+					width: 72px;
+					color: #61b96f;
+					font-weight: 800;
+				}
+		#board > .number > p{
+			text-align: center;
+			line-height: 32px;
+		}
+			#board > .number > p > a{
+				display: inline;
+				color: #cecece;
+			}
+			#board > .number > p > a.active{
+				color: #555
+			}
+			#board > .number > p > span{
+				color: #cdcdcd;
+			}

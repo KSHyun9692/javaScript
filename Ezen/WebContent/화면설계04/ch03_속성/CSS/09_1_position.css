@@ -1,0 +1,36 @@
+/* position*/
+
+*{ margin: 0; padding: 0;}
+
+.outer{
+	width: 500px;
+	height: 300px;
+	border: 5px solid red;
+	margin: 50px;
+	position: relative; /*기준*/
+}
+
+	.outer > div{
+		width: 200px;
+		height: 200px;
+	}
+	.outer > div.box1{
+		background: pink;
+		position: absolute;
+		left: 0; top: 0;
+		z-index:10;
+	}
+	
+	.outer > div.box2{
+		background: #a95d28;
+		position: absolute;
+		right: 150px; top: 50px;
+		z-index:5;
+	}
+	
+	.outer > div.box3{
+		background: skyblue;
+		position: absolute;
+		right: 200px; bottom: 0;
+		z-index:8;
+	}

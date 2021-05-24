@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>전후문자선택자</title>
+<style>
+.test{
+	border: 2px solid red;
+}
+
+	.test > p{
+		background-color: pink;
+}
+		.test::before{
+			content: "before";
+	}
+		.test::after{
+			content: "after";
+		}
+
+label.label{
+	display: block;
+	width: 40px; 
+	height: 40px;
+	background-color: pink;
+	border-radius: 20px;
+	position: relative;
+}
+label.label>span,
+label.label::before,
+label.label::after{
+	display: block;
+	height: 2px;
+	background-color: #fff;
+	position:absolute;
+	left: 5px;
+	transition-duration: 1s;
+}
+
+	label.label>span{
+		 top: 19px;
+		 width: 25px;
+	}
+
+	label.label::before{
+		content:"";
+		top: 9px;
+		width: 20px;
+	}
+
+	label.label::after{
+		content:"";
+		width: 30px;
+		top: 29px;
+	}
+
+		/* 체크시 폭 조절*/
+		input#toggle:checked + label.label>span{
+		width: 30px
+	}
+
+	input#toggle:checked + label.label::before{
+		width: 25px;
+	
+	}
+
+	input#toggle:checked + label.label::after{
+		width: 20px;
+	}
+
+
+</style>
+</head>
+<body>
+
+<h1>전후문자선택자</h1>
+::befor		태그 앞에 위치한 공간
+::after			태그 뒤에 위치한 공간
+
+<h2>전후 문자 선택자 적용</h2>
+<div class="test"><p>text</p></div>
+
+<h2>햄버거버튼</h2>
+<input id="toggle" type="checkbox" />
+<label class="label" for="toggle"><span></span></label>
+</body>
+</html>

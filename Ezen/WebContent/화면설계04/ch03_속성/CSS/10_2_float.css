@@ -1,0 +1,25 @@
+/*10_2_float*/
+
+*{ margin: 0; padding: 0;}
+
+
+#wrap{
+	width: 800px;
+	border: 2px solid red;
+	margin: 0 auto;
+}
+	#side{
+		width: 180px;
+		background-color: skyblue;
+		float: left;
+	}
+	#contents{
+		width: 600px;
+		background-color: green;
+		float: right;
+	}
+	#footer{
+	background-color: purple;
+	float: bottom;
+	clear: both;
+	}

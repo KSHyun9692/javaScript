@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>위치속성</title>
+</head>
+<body>
+
+<h1>위치속성</h1>
+position, float
+
+
+<h2>position 속성</h2>
+static					기본값 위에서 아래 순서대로 배치
+relative				absolute의 기준 left right top bottom도 같이 사용이 가능하지만 될 수 있으면 쓰지 말것.
+absolute				relative(기준)이 없다면 웹브라우저를 기준으로 left right top bottom 적용가능.
+fixed					본문의 길이와 스크롤의 위치와 상관없이 고정된 left right top bottom 을 적용 가능
+<h2>left right top bottom 속성</h2>
+단독으로는 사용할 수 없고 반드시 position속성이 적용된 부위에만 추가 가능<br />
+margin-left, right, top, botton 개념이 다름<br />
+방향별로 크기단위 입력시 위치를 변경할 수 있음.
+
+<h2>z-index</h2>
+position 속성에만 사용 가능
+단독으로는 사용불가<br />
+콘텐츠 입력순서상 마지막에 입력 된 영역이 가장 우선순위로 앞에 나옴
+z-index 콘텐츠 입력순서와 상관없이 화면에 보여지는 우선순이를 바꿀 수 있음.
+<h2>position 속성 작성싱 규칙</h2>
+1. absolute의 기준이 되는 relative는 height속성이 포함되어있어야 함.<br />
+2. absolute의 기준은 직계 부모에만 작성 할 수 있다.
+<h2>float 속성</h2>
+left				왼쪽고정<br />
+right				오른쪽고정
+
+<h2>이전에 작성된 형제 영역에 적용된 float에 영향을 받지 않으려면</h2>
+clear속성에 left right both중에 입력
+
+<h2>overflow속성</h2>
+hidden			영역밖을 벗어 났을 때 숨김처리 / 자식 float이 적용된 경우 부모 영역 확보<br />
+scroll				영역 밖을 벗어 난 부분을 스크롤해서 볼 수 있게함.
+
+<h2>float의 규칙</h2>
+1. 자식에 float이 적용될 경우 부모에 overflow:hiddenl; 또는 height 적용 또는float 적용
+2. 이전 형제에 float이 적용될 경우 나머지 공간에 다음에 오는 영역이 채워지므로 영향을 받지 않기 위해서 clear속성을 입력
+
+</body>
+</html>

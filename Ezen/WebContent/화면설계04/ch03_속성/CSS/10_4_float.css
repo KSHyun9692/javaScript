@@ -1,0 +1,37 @@
+/*10_4_float*/
+*{ margin: 0; padding: 0;}
+
+#wrap{
+	width: 800px;
+	border: 2px solid red;
+	margin: 0 auto;
+}
+
+	.container{
+		width: 100%;
+		background-color: orange;
+		overflow: hidden;
+	}
+		.left{
+			float: left;
+			width: 655px;
+			background-color: yellow;
+		}
+			#side-a{
+				width: 165px;
+				background-color: skyblue;
+				float: left;
+			}
+			#contents{
+				width: 485px;
+				background-color: green;
+				float: right;
+			}
+		#side-b{
+			width: 140px;
+			background-color: blue;
+			float: right;
+		}
+	#footer{
+		background-color: purple;
+	}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>상태선택자를 활용한 토글메뉴</title>
+<style>
+/*
+input#toggle{display: none; }
+*/
+input[type=checkbox] {display: none;}
+
+#main_nav{
+	width: 0;
+	overflow: hidden; /*여러기능이 있지만 메인기능은 영역 밖을 벗어난 요소들을 숨김처리*/
+	transition-duration: 1s;
+}
+input#toggle:checked + #main_nav{
+	width: 300px;
+}
+	#main_nav >ul{
+	width: 300px;
+	box-sizing: border-box;
+	border: 2px solid pink;
+	}
+
+
+</style>
+</head>
+<body>
+
+
+<label for="toggle"><img src="imagess/toggle_btn.png" alt="햄버거버튼" /></label>
+
+<input id="toggle" type="checkbox" />
+<nav id="main_nav">
+	<ul>
+		<li>
+			<a href="#">가</a>
+			<ul>
+				<li><a href="#">SUB MENU 1-1</a></li>
+				<li><a href="#">SUB MENU 1-2</a></li>
+				<li><a href="#">SUB MENU 1-3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">나</a>
+			<ul>
+				<li><a href="#">SUB MENU 2-1</a></li>
+				<li><a href="#">SUB MENU 2-2</a></li>
+				<li><a href="#">SUB MENU 2-3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">다</a>
+			<ul>
+				<li><a href="#">SUB MENU 3-1</a></li>
+				<li><a href="#">SUB MENU 3-2</a></li>
+				<li><a href="#">SUB MENU 3-3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">라</a>
+			<ul>
+				<li><a href="#">SUB MENU 4-1</a></li>
+				<li><a href="#">SUB MENU 4-2</a></li>
+				<li><a href="#">SUB MENU 4-3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">마</a>
+			<ul>
+				<li><a href="#">SUB MENU 5-1</a></li>
+				<li><a href="#">SUB MENU 5-2</a></li>
+				<li><a href="#">SUB MENU 5-3</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+
+</body>
+</html>

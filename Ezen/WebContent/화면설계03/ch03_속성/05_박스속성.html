@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>박스속성</title>
+</head>
+<body>
+
+<h1>박스속성</h1>
+
+<h2>종류</h2>
+width			폭(넓이)<br />
+height			높이<br />
+padding		안쪽여백<br />
+border		테두리<br />
+margin		주변여백<br />
+
+<h2>width, height</h2>
+크기단위 입력(px, %, em, vw,vh)
+
+<h2>padding</h2>
+padding-top, padding-right, padding-botton, paddin-left<br />
+
+ex) padding: 10px;					위쪽으로 10px 오른쪽으로 10px 아래쪽 10px 왼쪽 10px
+	padding: 0 10px;				상하 0px 우좌 10px;
+	padding: 0 10px 20px;			상0px, 우좌 10px 하 20px
+	padding: 0 10px 20px 30px;	상0px 우10px 하20px 좌30px
+
+<h2>margin 속성</h2>
+padding과 입력방법은 같음
+
+
+<h2>border 속성 : 3가지 속성이 모두 입력되어애 정확히 출력됨</h2>
+border-width				두께(크기단위 입력)<br />
+border-color				색상(색상단위 입력)<br />
+border-style					테두리 스타일<br /><br />
+
+주로 한번에 입력함
+border: width style color;
+
+방향별 border 성정시 border-top,right,bottom, left<br /><br />
+<h2>border-style</h2>
+none				없음
+solid				실선
+dashed			대시선
+dotted			점선
+double			이중선
+outset				양각선
+inset				음각선
+ridge				테두리만 양각선
+groove			테두리만 음각선
+
+<h2>border-radius</h2>
+박스모델 모서리부분을 둥글게 만들때<br />
+border-radius: 좌상 우상 우하 좌하; 왼쪽 상단기준으로 4개 값이 시계방향으로 적용<br />
+동일한 값을 입력할 때는 값을 하나만 입력하면 됨.
+
+</body>
+</html>
