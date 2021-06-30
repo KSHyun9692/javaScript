@@ -1,45 +1,46 @@
 const quotes = [
     {
-        quote: " 가나다",
-        author: "가나다",
+      quote: "The way to get started is to quit talking and begin doing.",
+      author: "Walt Disney",
     },
     {
-        quote: " 가나다라",
-        author: "가나다라",
+      quote: "Life is what happens when you're busy making other plans.",
+      author: "John Lennon",
     },
     {
-        quote: " 가나다라마",
-        author: "가나다라마",
+      quote:
+        "The world is a book and those who do not travel read only one page.",
+      author: "Saint Augustine",
     },
     {
-        quote: " 가나다라마바",
-        author: "가나다라마바",
+      quote: "Life is either a daring adventure or nothing at all.",
+      author: "Helen Keller",
     },
     {
-        quote: " 가나다라가가",
-        author: "가나다라가가",
+      quote: "To Travel is to Live",
+      author: "Hans Christian Andersen",
     },
     {
-        quote: " 가나다라나나",
-        author: "가나다라나나",
+      quote: "Only a life lived for others is a life worthwhile.",
+      author: "Albert Einstein",
     },
     {
-        quote: " 가나다라라라라",
-        author: "가나다라라라라",
+      quote: "You only live once, but if you do it right, once is enough.",
+      author: "Mae West",
     },
     {
-        quote: " 가나다라바바바",
-        author: "가나다라바바바",
+      quote: "Never go on trips with anyone you do not love.",
+      author: "Hemmingway",
     },
     {
-        quote: " 가나다라하하하",
-        author: "가나다라하하하",
+      quote: "We wander for distraction, but we travel for fulfilment.",
+      author: "Hilaire Belloc",
     },
     {
-        quote: " 가나다라하하바바바바",
-        author: "가나다라하하하하바바",
-    }
-];
+      quote: "Travel expands the mind and fills the gap.",
+      author: "Sheda Savage",
+    },
+  ];
 
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
