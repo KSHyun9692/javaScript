@@ -1,3 +1,17 @@
+var str = "abcdeabcde";
+
+console.log(str.charAt(10));
+console.log(str.charAt(-1));
+console.log(str[1]);
+console.log(str.substring(2,4));
+console.log(str.substring(2));
+console.log(str.substr(2));
+console.log(str.substr(-7));
+console.log(str.substr(-7,2));
+console.log(str.indexOf("bc"));
+console.log(str.lastIndexOf("bc"));
+
+
 
 // 문자열 길이 알아내기
 //     문자열의 .length 속성이용
