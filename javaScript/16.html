@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //얕은복사
+        // const 구름 = {
+        //     이름: '구름',
+        //     나이: 6,
+        //     종류: '강아지'
+        // };
+        // const 별 = 구름;
+        // 별.이름 = "별";
+        // 별.나이 = 1;
+
+        // console.log(JSON.stringify(구름));
+        // console.log(JSON.stringify(별));
+
+        //전개연산자 이용한 깊은 복사
+        // const 구름 = {
+        //     이름: '구름',
+        //     나이: 6,
+        //     종류: '강아지'
+        // };
+        // const 별 = {...구름};
+        // 별.이름 = '별';
+        // 별.나이 = 1;
+
+        // console.log(JSON.stringify(구름));
+        // console.log(JSON.stringify(별));
+
+        //변경하고 싶은 속성만 추가
+        // const 구름 = {
+        //     이름: '구름',
+        //     나이: 6,
+        //     종류: '강아지'
+        // };
+
+        // const 별 = {
+        //     ...구름,
+        //     이름: '별',
+        //     나이: 1,
+        //     예방접종: true
+        // };
+
+        // console.log(JSON.stringify(구름));
+        // console.log(JSON.stringify(별));
+
+        //전개 부분 뒤로 이동
+        const 구름 = {
+            이름: '구름',
+            나이: 6,
+            종류: '강아지'
+        };
+
+        const 별 = {
+            이름: '별',
+            나이: 1,
+            예방접종: true,
+            ...구름
+        };
+
+        console.log(JSON.stringify(구름));
+        console.log(JSON.stringify(별));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
