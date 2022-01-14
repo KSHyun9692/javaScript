@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- querySelector -->
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //요소를 읽기
+            const header = document.querySelector('h1');
+
+            //텍스트와 스타일 변경
+            header.textContent = 'HEADERS';
+            header.style.color = 'white';
+            header.style.backgroundColor = 'black';
+            header.style.padding = '10px';
+        })
+    </script>
+    <h1></h1> -->
+    <!-- querySelectorAll-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            //요소를 읽기
+            const header = document.querySelectorAll('h1');
+
+            //텍스트와 스타일 변경
+            header.forEach((header) => {
+                header.textContent = 'HEADERS';
+                header.style.color = 'white';
+                header.style.backgroundColor = 'black';
+                header.style.padding = '10px';
+            })
+        })
+    </script>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+</body>
+</html>
