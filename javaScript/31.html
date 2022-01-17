@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>select태그</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const select = document.querySelector('select');
+            const p = document.querySelector('p');
+
+            select.addEventListener('change', (event) => {
+                const options = event.currentTarget.options;
+                const index = event.currentTarget.options.selectedIndex;
+
+                p.textContent = `선택: ${options[index].textContent}`;
+            });
+        });
+    </script>
+</head>
+<body>
+    <select>
+        <option>감자</option>
+        <option>고구마</option>
+        <option>옥수수</option>
+        <option>연근</option>
+        <option>당근</option>
+    </select>
+    <p>선택: 감자</p>
+</body>
+</html>
